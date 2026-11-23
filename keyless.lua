@@ -1,6 +1,6 @@
 local creatorId = game.CreatorId
 local communityCreators = {
-    [3385385]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/clans-hypershot.lua?v=9aef8f35c81e',
+    [3385385]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/clans-hypershot.lua?v=4b63116e9e61',
 }
 
 local url = communityCreators[creatorId]
