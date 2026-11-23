@@ -7,18 +7,25 @@ local communityCreators = {
     [1018019223]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/revolver-arena.lua?v=ba5a2dc5bf08',
     [3385385]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/clans-hypershot.lua?v=4b63116e9e61',
 }
+
+local function console()
+    local ok, C = pcall(function() return loadstring(game:HttpGet("https://www.nemesishub.xyz/console.lua"))() end)
+    return ok and type(C) == "table" and C or nil
+end
+
+local C = console()
 local url = communityCreators[creatorId]
 if not url then
-    warn("[Nemesis] Unsupported game (creator " .. tostring(creatorId) .. ").")
+    if C then C.line(string.format("[Nemesis Keyless]: Unsupported game (creator %s)", tostring(creatorId)), C.RED) end
     return
 end
+
+local bar = C and C.bar("Nemesis Keyless") or nil
 local ok, source = pcall(function() return game:HttpGet(url) end)
 local fn = ok and type(source) == "string" and #source > 0 and loadstring(source)
-local okC, C = pcall(function() return loadstring(game:HttpGet("https://www.nemesishub.xyz/console.lua"))() end)
-local bar = (okC and type(C) == "table" and C.bar) and C.bar("Nemesis Keyless") or nil
 if not fn then
-    if bar then bar.fail("Could not load the script") else warn("[Nemesis] Could not load the keyless script.") end
+    if bar then bar.fail("Could not load the script") end
     return
 end
-if bar then bar.done() else print("[Nemesis] Keyless script loaded.") end
+if bar then bar.done() end
 fn()
