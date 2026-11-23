@@ -7,20 +7,15 @@ local communityCreators = {
     [1018019223]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/revolver-arena.lua?v=ba5a2dc5bf08',
     [3385385]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/clans-hypershot.lua?v=4b63116e9e61',
 }
-
 local url = communityCreators[creatorId]
 if not url then
     warn("[Nemesis] Unsupported game (creator " .. tostring(creatorId) .. ").")
     return
 end
-
 local ok, source = pcall(function() return game:HttpGet(url) end)
 local fn = ok and type(source) == "string" and #source > 0 and loadstring(source)
-
--- console (bar + SUCCESS) is served by the site; if it is unreachable the script still runs
 local okC, C = pcall(function() return loadstring(game:HttpGet("https://www.nemesishub.xyz/console.lua"))() end)
 local bar = (okC and type(C) == "table" and C.bar) and C.bar("Nemesis Keyless") or nil
-
 if not fn then
     if bar then bar.fail("Could not load the script") else warn("[Nemesis] Could not load the keyless script.") end
     return
