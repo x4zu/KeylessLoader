@@ -1,5 +1,6 @@
 local creatorId = game.CreatorId
 local communityCreators = {
+    [718067209]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/warnetopia-internet-cafe.lua?v=b4731210b0cc',
     [299349841]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/prison-tycoon.lua?v=ab68d9785913',
     [755214094]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/voxel-wars.lua?v=a7f942e65111',
     [1018019223]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/revolver-arena.lua?v=ba5a2dc5bf08',
