@@ -16,11 +16,11 @@ end
 local C = console()
 local url = communityCreators[creatorId]
 if not url then
-    if C then C.line(string.format("[Nemesis Keyless]: Unsupported game (creator %s)", tostring(creatorId)), C.RED) end
+    if C then C.line(string.format("[%s]: Unsupported game (creator %s)", C.gameName(), tostring(creatorId)), C.RED) end
     return
 end
 
-local bar = C and C.bar("Nemesis Keyless") or nil
+local bar = C and C.bar(C.gameName()) or nil
 local ok, source = pcall(function() return game:HttpGet(url) end)
 local fn = ok and type(source) == "string" and #source > 0 and loadstring(source)
 if not fn then
