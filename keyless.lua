@@ -1,3 +1,16 @@
+--[[
+__   __ _____  _______   _
+\ \ / // __  \|___  / | | |
+ \ V / `' / /'   / /| | | |
+ /   \   / /    / / | | | |
+/ /^\ \./ /___./ /__| |_| |
+\/   \/\_____/\_____/\___/
+
+          Created by: @x2zu
+      Discord: https://discord.com/invite/ZJFjVxFjwa
+  in the end you ended up here to take my idea
+punya ide kembangin idiot bukan copy paste bego idiotttttt
+]]
 local creatorId = game.CreatorId
 local communityCreators = {
     [1084602234]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/100-miles-down-the-river.lua?v=f21ad01f480c',
