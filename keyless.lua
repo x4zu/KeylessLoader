@@ -1,7 +1,6 @@
--- discord : @x2zu 
--- ambil lah ambil idenya kontol, tapi kalo punya malu izin dlu idiot
 local creatorId = game.CreatorId
 local communityCreators = {
+    [406621119]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/barber-empire.lua?v=03201b8e34bd',
     [87770135]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/wings-fight.lua?v=9a0f9517475e',
     [115196901]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/throw-a-seed.lua?v=2367dbae93b9',
     [718067209]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/warnetopia-internet-cafe.lua?v=b4731210b0cc',
