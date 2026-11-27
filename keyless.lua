@@ -1,3 +1,5 @@
+-- discord : @x2zu 
+-- ambil lah ambil idenya kontol, tapi kalo punya malu izin dlu idiot
 local creatorId = game.CreatorId
 local communityCreators = {
     [87770135]    = 'https://raw.githubusercontent.com/x4zu/KeylessScript/main/scripts/wings-fight.lua?v=9a0f9517475e',
